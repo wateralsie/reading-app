@@ -1,4 +1,4 @@
-package com.sumin.readroad.util
+package com.sumin.readroad.util.binding
 
 import android.os.Bundle
 import android.view.LayoutInflater
