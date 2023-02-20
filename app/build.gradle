@@ -1,8 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'com.google.dagger.hilt.android'
-    id 'kotlin-kapt'
+    id "kotlin-kapt"
 }
 
 Properties properties = new Properties()
@@ -57,9 +56,6 @@ dependencies {
     implementation "androidx.fragment:fragment-ktx:1.5.5"
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    // Hilt
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-compiler:$hilt_version"
     // Timber
     implementation "com.jakewharton.timber:timber:5.0.1"
     // Coroutines
