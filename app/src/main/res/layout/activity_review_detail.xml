@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+<!--        <import type="android.view.View"/>-->
+<!--        <variable-->
+<!--            name="vm"-->
+<!--            type="com.sumin.readroad.presentation.review.ReviewDetailViewModel" />-->
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -51,6 +54,16 @@
                 app:layout_constraintStart_toStartOf="@+id/tv_detail_book_title"
                 app:layout_constraintTop_toBottomOf="@+id/tv_detail_book_title" />
 
+            <Button
+                android:id="@+id/btn_detail_scrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="구문저장"
+                android:textAppearance="@style/TextAppearance.Body3"
+                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
@@ -64,9 +77,9 @@
             android:id="@+id/scroll_review_detail"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:scrollbars="vertical"
             android:layout_marginHorizontal="20dp"
             android:scrollbarFadeDuration="@integer/material_motion_duration_medium_1"
+            android:scrollbars="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iv_detail_line">
 
