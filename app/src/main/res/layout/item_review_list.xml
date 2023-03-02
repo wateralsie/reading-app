@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_rectangle_radius_8"
+    android:elevation="10dp"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/iv_list_book"
+        android:layout_width="80dp"
+        android:layout_height="120dp"
+        android:src="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.Headline3"
+        app:layout_constraintStart_toEndOf="@+id/iv_list_book"
+        app:layout_constraintTop_toTopOf="@+id/iv_list_book"
+        tools:text="달러구트 꿈 백화점" />
+
+    <TextView
+        android:id="@+id/tv_list_content"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/TextAppearance.Body2"
+        app:layout_constraintStart_toStartOf="@+id/tv_list_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_list_title"
+        tools:text="이것은 꿈 세계에서 일어나는 일을 다루는 소설이다. 달러구트 꿈 백화점 신입 직원 페니가 주인공이다. " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
